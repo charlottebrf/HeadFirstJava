@@ -8,7 +8,7 @@ Dog myDog = new Dog(name, size);
 // creates a new instance myDog of the Dog class
 
 x = size - 5;
-// doesn't assign 22 to var x as x isn't declared
+// subtract 5 from value of size (27) & assign this to already declared var x
 
 if (x < 15) myDog.bark(8)
 // logic statement if x is less than 15 then invoke bark function on myDog instance
@@ -29,6 +29,7 @@ while (x > 3) {
  // standard output print string Dog + var name
 
  String num = "8";
+// Declare string var num & assign 8 to it
 
  int z = Integer.parseInt(num);
  // assigns converted 8 integer to the var z
@@ -36,9 +37,10 @@ while (x > 3) {
  try {
    readTheFile("myFile.txt")
  }
- // key word in Java
+ // key word in Java- try to read the file
 
  catch(FileNotFoundException ex) {
    System.out.print("File not found.")
  }
- // will catch a thrown exception
+ // will catch a thrown exception- see if the thing tried worked or not - if the try didn't work
+ // then do the following
