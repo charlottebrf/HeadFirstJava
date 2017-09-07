@@ -22,19 +22,33 @@ boolean isIn = myList.contains(b);
 String[] myList = new String[2];
 
 String a = new String("Whoohoo");
-myList.append(a);
+myList[0] = a;
+// myList.append(a);
 
 String b = new String("Frog");
-myList.append(b);
+myList[0] = b;
+// myList.append(b);
 
 int theSize = myList.length();
 
-Object o = myList[0];
+// myList[1] = null;
+// Object o = myList[0];
 
 myList = myList.removeElement(myList, 0);
+myList[1] = null;
 
 for (String element : myList) {
   if (element == b) {
     true
+  }
+}
+
+
+boolean isIn = false;
+
+for (String item : myList) {
+  if (b.equals(item)) {
+    isIn = true;
+    break;
   }
 }
