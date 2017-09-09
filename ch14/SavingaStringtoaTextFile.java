@@ -1,0 +1,20 @@
+objectOutputStream.writeObject(someObject);
+//write a serialized object
+
+fileWriter.write("My first string to save");
+// write a string
+
+import java.io.*;
+class WriteAFile {
+  public static void main(String[] args) {
+    try {
+      FileWriter writer = new FileWriter("Foo.txt");
+
+      writer.write("hello foo!");
+
+      writer.close();
+    }catch(IOException ex) {
+      ex.printStackTrace();
+    }
+  }
+}
